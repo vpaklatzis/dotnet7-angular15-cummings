@@ -3,17 +3,17 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Data;
 
-public class APIContext : DbContext {
+public class ApiContext : DbContext {
 
-    private readonly IConfiguration configuration;
+    private readonly IConfiguration _configuration;
 
-    public APIContext(IConfiguration configuration) {
-        this.configuration = configuration;
+    public ApiContext(IConfiguration configuration) {
+        this._configuration = configuration;
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        string connectionString = configuration.GetConnectionString("DefaultConnection");
+        string connectionString = _configuration.GetConnectionString("DefaultConnection");
         optionsBuilder.UseSqlite(connectionString);
     }
 

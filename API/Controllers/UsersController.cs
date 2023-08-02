@@ -1,24 +1,26 @@
 using System.Net;
 using API.Data;
 using API.Entities;
-using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("/api/v1/users")]
 public class UsersController : ControllerBase {
 
-    private readonly APIContext _context;
+    private readonly ApiContext _context;
     private readonly ILogger<UsersController> _logger;
 
-    public UsersController(APIContext context, ILogger<UsersController> logger) {
+    public UsersController(ApiContext context, ILogger<UsersController> logger) {
         _context = context ?? throw new ArgumentNullException(nameof(context));
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }
-
+    
+    [AllowAnonymous]
     [HttpGet(Name = "Get Users")]
     [ProducesResponseType(typeof(IEnumerable<User>), (int)HttpStatusCode.OK)]
     public async Task<ActionResult<IEnumerable<User>>> GetUsers() {
@@ -26,7 +28,7 @@ public class UsersController : ControllerBase {
 
         return Ok(users);
     }
-
+    
     [HttpGet("{id}", Name = "Get User By Id")]
     [ProducesResponseType((int)HttpStatusCode.NotFound)]
     [ProducesResponseType(typeof(User), (int)HttpStatusCode.OK)]

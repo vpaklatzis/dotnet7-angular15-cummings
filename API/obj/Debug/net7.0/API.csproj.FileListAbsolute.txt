@@ -136,3 +136,13 @@ C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\obj\Debug\net7.0\r
 C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\obj\Debug\net7.0\API.pdb
 C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\obj\Debug\net7.0\ref\API.dll
+C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\bin\Debug\net7.0\CloudinaryDotNet.dll
+C:\Users\vpakl\vscode-projects\dotnet7-angular15-cummings\API\bin\Debug\net7.0\Newtonsoft.Json.dll

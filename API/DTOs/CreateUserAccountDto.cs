@@ -1,7 +1,11 @@
-﻿namespace API.DTOs;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace API.DTOs;
 
 public class CreateUserAccountDto
 {
-    public string UserName { get; set; }
+    [Required]
+    public string Username { get; set; }
+    [Required]
     public string Password { get; set; }
 }
